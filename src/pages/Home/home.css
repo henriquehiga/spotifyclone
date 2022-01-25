@@ -1,0 +1,176 @@
+.containerContent{
+    width: calc(100% - 30%);
+    height: calc(100% - 81px);
+    width: 100%;
+
+    padding-top: -60px;
+
+    overflow: auto;
+
+    position: relative;
+}
+
+.headerWrapper{
+    width: 100%;
+    height: 390px;
+    
+
+    background: rgb(46,2,144);
+    background: linear-gradient(180deg, rgb(47, 2, 144, 1) 0%, rgba(25,20,20,0) 100%);
+}
+
+.contentWrapper{
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.contentWrapper h2{
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.headerContent{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    padding-top: 90px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: #fff;
+}
+
+.cardsHeader{
+    width: 100%;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.contentCardsHolder{
+    display: flex;
+
+    gap: 20px;
+
+    padding: 10px 30px;
+
+    overflow: auto;
+}
+
+.titleCardContent{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleCardContent b{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    color: #b9b9b9;
+}
+
+.titleCardContent b:hover{
+
+    color: #f3f3f3;
+    text-decoration: underline;
+
+}
+
+.iconsMessage{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .iconsMessage{
+        display: flex;
+    }
+
+    .titleCardContent{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .titleCardContent b{
+        display: none;
+    }
+
+    .contentWrapper h2{
+        margin-bottom: 10px;
+    }
+
+    .containerContent{
+        width: 100%;
+        min-height: 100%;
+        padding-bottom: 150px;
+    }
+
+    .contentWrapper{
+        gap: 20px;
+    }
+
+    .headerContent{
+        height: 300px;
+        padding: 10px;
+    }
+
+    .headerContent h1{
+        font-size: 20px;
+    }
+
+    .cardsHeader{
+        max-height: none;
+    }
+
+    .contentCardsHolder{
+        max-height: 230px;
+        padding: 0 10px;
+    }
+
+    .boxContent{
+        height: auto;
+    }
+
+    .headerWrapper{
+        height: auto;
+    }
+
+    .cardsHeader{
+        gap: 5px;
+    }
+
+    .containerMessage{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .iconsMessage{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: lighter;
+    }
+
+    
+
+
+}

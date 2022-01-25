@@ -1,0 +1,100 @@
+.navuser-container{
+    width: calc(100% - 30%);
+    min-width: calc(100% - 250px);
+
+    top: 0;
+
+    position: fixed;
+
+    z-index: 99;
+
+    height: 60px;
+}
+
+.navuser-wrapper{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    
+    padding: 0 30px;
+
+    justify-content: space-between;
+}
+
+.buttonsBackNext{
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonsControl{
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--grayDK);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.buttonsControl{
+    color: #fff;
+}
+
+.buttonsControl:nth-child(2){
+    opacity: 0.5;
+}
+
+.userInfo{
+    width: 160px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2px;
+    border-radius: 15px;
+
+    font-size: 14px;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    background-color: var(--grayDK);
+}
+
+.userInfo:hover{
+    background-color: var(--grayLT);
+}
+
+.userInfoImg{
+    width: 28px;
+    height: 28px;
+}
+
+.userInfoImg img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+
+.userInfo p{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navuser-container{
+        display: none;
+    }
+}
